@@ -103,3 +103,30 @@ a {
   align-items: center;
   margin: 1em 0;
 }
+
+.error-page {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #7e7a7a;
+}
+
+.error-page h1 {
+  font-size: 14em;
+  margin: 0;
+}
+
+.error-page h3 {
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+  word-spacing: 10px;
+}
+
+.error-page p {
+  font-size: 1em;
+}
+
