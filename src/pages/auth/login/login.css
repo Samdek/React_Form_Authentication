@@ -1,0 +1,18 @@
+.login_form {
+    height: 55vh;
+    border-radius: 5px;
+    margin-bottom: 0.3em;
+}
+  
+.login-btn {
+    margin-top: 1em;
+    background-color: #a19b9b;
+    color: #555555;
+}
+
+.forgot_password_link {
+    color: #200c7e;
+    font-weight: bold;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
