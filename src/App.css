@@ -24,32 +24,13 @@ form {
   margin: 3em 0;
 }
 
-.login_form {
-  height: 55vh;
-  border-radius: 5px;
-  margin-bottom: 0.3em;
-}
-
-.login-btn {
-  margin-top: 1em;
-  background-color: #a19b9b;
-  color: #555555;
-}
-
-.forgot_password_link {
-  color: #200c7e;
-  font-weight: bold;
-  font-size: 0.7em;
-  letter-spacing: 1px;
-}
-
 h2 {
   margin-bottom: 0.3em;
 }
 
 p {
   font-size: 0.7em;
-}
+} 
 
 .input_container {
   border: 1px solid #858586;
@@ -103,30 +84,3 @@ a {
   align-items: center;
   margin: 1em 0;
 }
-
-.error-page {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  font-family: sans-serif;
-  color: #7e7a7a;
-}
-
-.error-page h1 {
-  font-size: 14em;
-  margin: 0;
-}
-
-.error-page h3 {
-  font-size: 2rem;
-  margin: 0;
-  text-transform: uppercase;
-  word-spacing: 10px;
-}
-
-.error-page p {
-  font-size: 1em;
-}
-
