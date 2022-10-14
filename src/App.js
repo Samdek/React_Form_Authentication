@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
-import Login from "./Login"
-import Register from "./Register"
-import Pageerror from "./Pageerror"
+import Login from "./pages/auth/login/index"
+import Profile from "./pages/dashboard/profile/index"
+import Register from "./pages/auth/register/index"
+import Pageerror from "./components/page error/index"
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="*" element={<Pageerror />} />
       </Routes>
