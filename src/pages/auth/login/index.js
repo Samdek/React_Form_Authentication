@@ -17,9 +17,7 @@ export default function Login() {
                         <label htmlFor="password">Password</label>
                         <input id="password" type="password" />
                     </div>
-//                        className="login-btn"
-//                     <button><Link to="/profile">Continue</Link></button>
-            <button><Link to="/profile">Create account</Link></button>
+                    <Link to="/profile"><button className="login-btn">Continue</button></Link>
                 </form>
                 <a href="https://www.github.com/Samdek" className="forgot_password_link">Forgot your password?</a>
             </div>
