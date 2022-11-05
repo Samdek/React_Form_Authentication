@@ -17,11 +17,11 @@ export default function Login() {
                         <label htmlFor="password">Password</label>
                         <input id="password" type="password" />
                     </div>
-                    <Link to="/profile"><button className="login-btn">Continue</button></Link>
+                    <Link to="/profile"><button>Continue</button></Link>
                 </form>
                 <a href="https://www.github.com/Samdek" className="forgot_password_link">Forgot your password?</a>
             </div>
         </main>
     )
-
+// className="login-btn"
 }
