@@ -29,7 +29,7 @@ export default function CreateAcc() {
                         <label htmlFor="agreeTerms">I agree to the <a href="https://www.github.com/Samdek">Terms of Service</a> and <a href="https://www.github.com/Samdek">Privacy Policy</a></label>
                     </div>
 
-                    <button>Create account</button>
+                    <button><Link to="/profile">Create account</Link></button>
                 </form>
             </div>
         </main>
