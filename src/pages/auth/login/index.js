@@ -18,7 +18,8 @@ export default function Login() {
                         <input id="password" type="password" />
                     </div>
 //                        className="login-btn"
-                    <button><Link to="/profile">Continue</Link></button>
+//                     <button><Link to="/profile">Continue</Link></button>
+            <button><Link to="/profile">Create account</Link></button>
                 </form>
                 <a href="https://www.github.com/Samdek" className="forgot_password_link">Forgot your password?</a>
             </div>
