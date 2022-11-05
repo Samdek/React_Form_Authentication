@@ -17,8 +17,8 @@ export default function Login() {
                         <label htmlFor="password">Password</label>
                         <input id="password" type="password" />
                     </div>
-                      
-                    <button className="login-btn"><Link to="/profile">Continue</Link></button>
+//                        className="login-btn"
+                    <button><Link to="/profile">Continue</Link></button>
                 </form>
                 <a href="https://www.github.com/Samdek" className="forgot_password_link">Forgot your password?</a>
             </div>
