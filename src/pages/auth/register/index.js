@@ -1,6 +1,31 @@
 import { Link } from "react-router-dom"
+import React from "react"
+import { type } from "@testing-library/user-event/dist/type"
 
 export default function CreateAcc() {
+
+    const [formData, setFormData] = React.useState({
+        firstName: "" ,
+        lastName: "" ,
+        email: "" ,
+        password: "" ,
+        agreedTerm: false
+    })
+
+    function handleChange(event) {
+        const {name, value, type, checked} = event.target
+        setFormData(prevForm => {
+            return {
+                ...prevForm,
+                [name]: type === "checkbox" ? checked : value
+            }
+        })
+    }
+
+    function handleSubmit() {
+        localStorage.setItem("userFormData", JSON.stringify(formData))
+    }
+
     return(
         <main className="App">
             <div>
@@ -10,26 +35,26 @@ export default function CreateAcc() {
 
                     <div className="input_container">
                         <label htmlFor="firstName">First name</label>
-                        <input id="firstName" /> 
+                        <input onChange={handleChange} id="firstName" name="firstName" value={formData.firstName} /> 
                     </div>
                     <div className="input_container">
                         <label htmlFor="lastName">Last name</label>
-                        <input id="lastName" />
+                        <input onChange={handleChange} id="lastName" name="lastName" value={formData.lastName} />
                     </div>
                     <div className="input_container">
                     <label htmlFor="email">Email address</label>
-                        <input id="email" type="email" />
+                        <input onChange={handleChange} id="email" type="email" name="email" value={formData.email} />
                     </div>
                     <div className="input_container">
                         <label htmlFor="password">Password</label>
-                        <input id="password" type="password" />
+                        <input onChange={handleChange} id="password" type="password"  name="password" value={formData.password} />
                     </div>
                     <div className="check_container">
-                        <input type="checkbox" id="agreeTerms" className="input_check" />
+                        <input onChange={handleChange} type="checkbox" id="agreeTerms" className="input_check" name="agreedTerm" checked={formData.agreedTerm}/>
                         <label htmlFor="agreeTerms">I agree to the <a href="https://www.github.com/Samdek">Terms of Service</a> and <a href="https://www.github.com/Samdek">Privacy Policy</a></label>
                     </div>
 
-                    <Link to="/profile"><button>Create account</button></Link>
+                    <Link to="/login"><button onClick={handleSubmit}>Create account</button></Link>
                 </form>
             </div>
         </main>

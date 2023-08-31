@@ -6,7 +6,7 @@
   
 .login-btn {
     margin-top: 1em;
-    background-color: #purple;
+    /* background-color: #purple; */
     color: #fff;
 }
 
@@ -15,4 +15,21 @@
     font-weight: bold;
     font-size: 0.7em;
     letter-spacing: 1px;
+}
+
+.status-message-container {
+    text-align: center;
+}
+
+.status-message-fail {
+    color: #d30000;
+}
+
+.status-message-success {
+    color: #008200;
+}
+
+.first-sign-up {
+    margin: 10em auto 0;
+    text-align: center;
 }

@@ -29,6 +29,10 @@ section > div {
     border-radius: 5px;
 }
 
+.grey svg {
+    margin: 0 .4em;
+}
+
 .profile_btn {
     height: 46px;
 }
@@ -80,7 +84,7 @@ i {
     color: white;
     background-color: #0d5092;
     width: auto;
-    margin: 0 auto 1em;
+    margin: 0 auto 2em;
     padding: 0.6em 1.3em;
     border-radius: 5px;
 
